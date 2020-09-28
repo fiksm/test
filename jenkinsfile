@@ -20,11 +20,7 @@ pipeline {
       
     }
 
-    options {
-        timeout(time: 1, unit: 'HOURS')
-        timestamps()
-        ansiColor('xterm')
-    }
+
 
 
     stages {
