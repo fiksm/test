@@ -1,1 +1,28 @@
+pipeline {
+
+    agent {
+          node {
+               label 'my-defined-label'
+               customWorkspace '/some/other/path'
+    }
+    }
+
+    parameters {
+      
+    }
+
+    options {
+        timeout(time: 1, unit: 'HOURS')
+        timestamps()
+        ansiColor('xterm')
+    }
+
+
+    stages {
+        stage('Prepare env') {
+            steps {}
+            }
+            }
+            }    
+                    
 
